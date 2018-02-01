@@ -27,27 +27,27 @@ class Ordteams{
         int t = scr.nextInt();
         while(t>0){
                 int[] st1 = new int[3]; int[] st2 = new int[3]; int[] st3 = new int[3];
-            for(int i = 0; i<=2; i++){
-                st1[i] = scr.nextInt();
-            }
-            for(int i = 0; i<=2; i++){
-                st2[i] = scr.nextInt();
-            }
-            for(int i = 0; i<=2; i++){
-                st3[i] = scr.nextInt();
-            }
-        
-            boolean a = checker(st1, st2);
-            boolean b = checker(st2, st3);
-            boolean c = checker(st3, st1);
-        
-            if(a==true && b==true && c==true){
-                System.out.println("yes");
-            }else{
-                System.out.println("no");
-            }
- 
-            t--;
+	            for(int i = 0; i<=2; i++){
+	                st1[i] = scr.nextInt();
+	            }
+	            for(int i = 0; i<=2; i++){
+	                st2[i] = scr.nextInt();
+	            }
+	            for(int i = 0; i<=2; i++){
+	                st3[i] = scr.nextInt();
+	            }
+	        
+	            boolean a = checker(st1, st2);
+	            boolean b = checker(st2, st3);
+	            boolean c = checker(st3, st1);
+	        
+	            if(a==true && b==true && c==true){
+	                System.out.println("yes");
+	            }else{
+	                System.out.println("no");
+	            }
+	 
+	            t--;
         }
     }
 } 
